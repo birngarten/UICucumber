@@ -7,11 +7,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.Function;
+
+
 
 public class ReusableMethods {
 
@@ -101,19 +101,7 @@ public class ReusableMethods {
         }
     }
 
-    //======Fluent Wait====//
-    public static WebElement fluentWait(final WebElement webElement, int timeinsec) {
-        FluentWait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
-                .withTimeout(Duration.ofSeconds(timeinsec))
-                .pollingEvery(Duration.ofMillis(500))
-                .ignoring(NoSuchElementException.class);
-        WebElement element = wait.until(new Function<WebDriver, WebElement>() {
-            public WebElement apply(WebDriver driver) {
-                return webElement;
-            }
-        });
-        return element;
-    }
+
 
     //======== Slider Ayarlama =========//
     public static void setSliderBall(WebElement element, int sliderStartPoint, int target) {
