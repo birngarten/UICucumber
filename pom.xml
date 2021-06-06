@@ -181,18 +181,6 @@
                     <target>8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                    <fork>true</fork>
-                    <!-- *** BILGISAYARINIZDAKI JAVAC PATH'INI ALT SATIRA EKLEYINIZ ***  -->
-                    <executable>C:\Program Files\Java\jdk-15\bin\javac</executable>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
 
