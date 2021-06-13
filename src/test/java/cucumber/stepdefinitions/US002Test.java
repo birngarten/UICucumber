@@ -4,7 +4,7 @@ import cucumber.pages.US002Page;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-public class US002 {
+public class US002Test {
 
     US002Page us002Page = new US002Page();
     @Given("user clicks girisyap link")

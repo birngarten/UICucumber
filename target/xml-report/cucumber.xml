@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="0.98">
+<testcase classname="API Test" name="TC0302 search result check dostoyevski &amp; 747" time="0.182">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user enters homepage..................................................passed
+Then user searches the data dostoyevski cucumbers...........................undefined
+Then user verifies the data 747 cucumbers...................................skipped
+]]></failure>
+</testcase>
+<testcase classname="API Test" name="TC0302 search result check tolstoy &amp; 890" time="0.005">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user enters homepage..................................................passed
+Then user searches the data tolstoy cucumbers...............................undefined
+Then user verifies the data 890 cucumbers...................................skipped
+]]></failure>
+</testcase>
+<testcase classname="API Test" name="TC0302 search result check turgenyev &amp; 168" time="0.009">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user enters homepage..................................................passed
+Then user searches the data turgenyev cucumbers.............................undefined
+Then user verifies the data 168 cucumbers...................................skipped
+]]></failure>
+</testcase>
+<testcase classname="API Test" name="TC0302 search result check victor hugo &amp; 259" time="0.005">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user enters homepage..................................................passed
+Then user searches the data victor hugo cucumbers...........................undefined
+Then user verifies the data 259 cucumbers...................................skipped
+]]></failure>
+</testcase>
+<testcase classname="API Test" name="TC0302 search result check balzac &amp; 363" time="0.005">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user enters homepage..................................................passed
+Then user searches the data balzac cucumbers................................undefined
+Then user verifies the data 363 cucumbers...................................skipped
+]]></failure>
+</testcase>
+</testsuite>

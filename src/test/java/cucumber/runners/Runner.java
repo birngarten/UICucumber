@@ -12,9 +12,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "cucumber/stepdefinitions",
-        tags = "",
+        tags = "@TC0302",
 
-        dryRun = false
+        dryRun = true
 
 )
 

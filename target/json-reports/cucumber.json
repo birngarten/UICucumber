@@ -1,0 +1,290 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-13T15:11:05.979Z",
+        "line": 16,
+        "name": "TC0302 search result check dostoyevski \u0026 747",
+        "description": "",
+        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters homepage",
+            "match": {
+              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user searches the data dostoyevski cucumbers",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user verifies the data 747 cucumbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          },
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@TC0302"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-13T15:11:06.207Z",
+        "line": 17,
+        "name": "TC0302 search result check tolstoy \u0026 890",
+        "description": "",
+        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters homepage",
+            "match": {
+              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user searches the data tolstoy cucumbers",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user verifies the data 890 cucumbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          },
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@TC0302"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-13T15:11:06.234Z",
+        "line": 18,
+        "name": "TC0302 search result check turgenyev \u0026 168",
+        "description": "",
+        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters homepage",
+            "match": {
+              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user searches the data turgenyev cucumbers",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user verifies the data 168 cucumbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          },
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@TC0302"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-13T15:11:06.263Z",
+        "line": 19,
+        "name": "TC0302 search result check victor hugo \u0026 259",
+        "description": "",
+        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters homepage",
+            "match": {
+              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user searches the data victor hugo cucumbers",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user verifies the data 259 cucumbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          },
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@TC0302"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-13T15:11:06.295Z",
+        "line": 20,
+        "name": "TC0302 search result check balzac \u0026 363",
+        "description": "",
+        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters homepage",
+            "match": {
+              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user searches the data balzac cucumbers",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user verifies the data 363 cucumbers",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          },
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@TC0302"
+          }
+        ]
+      }
+    ],
+    "name": "API Test",
+    "description": "",
+    "id": "api-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US03.feature",
+    "tags": [
+      {
+        "name": "@smoketest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@US03",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

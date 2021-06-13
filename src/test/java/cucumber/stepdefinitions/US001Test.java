@@ -7,7 +7,7 @@ import io.cucumber.java.en.*;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 
-public class US001 {
+public class US001Test {
     US001Page us001Page = new US001Page();
     //! random string generate
     String generatedString = RandomStringUtils.randomAlphabetic(10);
