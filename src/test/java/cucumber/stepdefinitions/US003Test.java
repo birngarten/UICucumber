@@ -30,7 +30,7 @@ public class US003Test {
     @Then("user verifies results with expected output list")
     public void userVerifiesResultsWithExpectedOutputlist() {
         for (WebElement a: us003Page.allSerachBookResults ) {
-                //Assert.assertTrue(controlData.contains(a.getText()));
+            Assert.assertTrue(controlData.contains(a.getText()));
             System.out.println(a.getText());
         }
     }
