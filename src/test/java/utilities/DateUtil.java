@@ -1,4 +1,4 @@
-package cucumber.utilities;
+package utilities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

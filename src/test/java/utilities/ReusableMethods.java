@@ -1,4 +1,4 @@
-package cucumber.utilities;
+package utilities;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;

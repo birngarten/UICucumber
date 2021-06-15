@@ -1,0 +1,96 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "user enters homepage and creates an account",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters homepage",
+            "match": {
+              "location": "stepdefinitions.US01_Stepdefinition.user_enters_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks uye ol link",
+            "match": {
+              "location": "stepdefinitions.US01_Stepdefinition.user_clicks_uye_ol_link()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-14T16:31:29.727Z",
+        "line": 10,
+        "name": "TC0101 uye ol",
+        "description": "",
+        "id": "us-01-success-register;tc0101-uye-ol",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 984700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies hesap olustur page",
+            "match": {
+              "location": "stepdefinitions.US01_Stepdefinition.user_verifies_hesap_olustur_page()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@TC0101"
+          }
+        ]
+      }
+    ],
+    "name": "US_01 success register",
+    "description": "",
+    "id": "us-01-success-register",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/sample.feature",
+    "tags": [
+      {
+        "name": "@SmokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@US01",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 12
+        }
+      }
+    ]
+  }
+]
