@@ -1,10 +1,10 @@
 package cucumber.stepdefinitions;
 
 import cucumber.pages.US003Page;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -34,4 +34,21 @@ public class US003Test {
             System.out.println(a.getText());
         }
     }
+    @Then("user searches the data {string} cucumbers with datatables")
+    public void user_searches_the_data_cucumbers_with_datatable(String searchData2) {
+        us003Page.searchBox.sendKeys(searchData2);
+        us003Page.searchButton.click();
+    }
+
+    @Then("user verifies results with expected output list with datatable")
+    public void user_verifies_results_with_expected_output_list_with_datatable(DataTable dataTable) {
+        System.out.println(dataTable);
+        System.out.println("dataTable.asList() = " + dataTable.asList());
+        for (WebElement a: us003Page.allSerachBookResults ) {
+            Assert.assertTrue(dataTable.asList().contains(a.getText()));
+        }
+    }
+
+
+
 }

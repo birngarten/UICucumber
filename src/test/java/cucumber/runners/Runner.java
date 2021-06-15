@@ -14,9 +14,10 @@ import org.junit.runner.RunWith;
         glue = "cucumber/stepdefinitions",
         tags = "@TC0302",
 
-        dryRun = true
+        dryRun = false
 
 )
 
 public class Runner {
+
 }
