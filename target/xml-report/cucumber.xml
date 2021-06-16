@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.198">
-    <testcase classname="US_01 success register" name="TC0101 uye ol" time="0.046">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="13.711">
+    <testcase classname="US_01 success register" name="TC0101 uye ol" time="6.717">
         <system-out><![CDATA[Given user enters homepage..................................................passed
 Then user clicks uye ol link................................................passed
 Given user verifies hesap olustur page......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US_01 success register" name="TC0102 create an account" time="3.381">
+        <system-out><![CDATA[Given user enters homepage..................................................passed
+Then user clicks uye ol link................................................passed
+Given user enters valid name................................................passed
+And user enters valid lastname..............................................passed
+And user enters valid email.................................................passed
+And user enters valid password "Kitapyurdu".................................passed
+And user re-enters valid password "Kitapyurdu"..............................passed
+And user clicks  Kisisel Verilerin Korunması checkbox.......................passed
+Then user clicks devam button...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US_01 success register" name="TC0103 check account" time="3.421">
+        <system-out><![CDATA[Given user enters homepage..................................................passed
+Then user clicks uye ol link................................................passed
+Given user enters name "Lutfi"..............................................passed
+And user enters lastname "Mutlu"............................................passed
+And user enters invalid email "kuzu"........................................passed
+And user enters invalid password "kitap"....................................passed
+And user re-enters invalid password "kitap".................................passed
+And user clicks  Kisisel Verilerin Korunması checkbox.......................passed
+Then user clicks devam button...............................................passed
+Then Please enter a valid E-Mail address! message should appear.............passed
+Then Your password must be between eight and twenty characters! message should appear.passed
 ]]></system-out>
     </testcase>
 </testsuite>
