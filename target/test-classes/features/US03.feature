@@ -1,7 +1,6 @@
 @smoketest
 @US03
 Feature: US003 User Login Test
-
   Background:
     Given user enters homepage
 
@@ -25,11 +24,12 @@ Feature: US003 User Login Test
   Scenario:TC0301 uye ol link control
     Then user searches the data "Balzac" cucumbers
     Then user verifies results with expected output list
-#data table uygulamasi
+
+  #data table uygulamasi
   @TC0303v2
   Scenario:TC0301 uye ol link control with datatable
-    Then user searches the data "Balzac" cucumbers with datatable
-    Then user verifies results with expected output list with datatable:
+    Then user searches the data "Balzac" cucumbers with datatables
+    Then user verifies results with expected output list with datatable
       | Vadideki Zambak (3-B-10) |
       | Goriot Baba              |
       | Gambara                  |
