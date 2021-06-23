@@ -3,13 +3,18 @@ package cucumber.stepdefinitions;
 import cucumber.pages.US004Page;
 import cucumber.utilities.Driver;
 import cucumber.utilities.ReusableMethods;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.*;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class US004Test {
     US004Page us004Page = new US004Page();
@@ -36,23 +41,28 @@ public class US004Test {
         Assert.assertEquals(us004Page.allBooks.size(),20);
     }
 
-    @Then("user asserts the kitabevi data {string}")
-    public void userAssertsTheKitabeviData(String data) {
-        List<String> kitapEvi = new ArrayList<>();
-        for (WebElement a: us004Page.kitabeviList) {
-                kitapEvi.add(a.getText());
+    @Then("user asserts the kitabevi data")
+    public void user_asserts_the_kitabevi_data(DataTable dataTable) {
+        for (WebElement a: us004Page.kitabeviList ) {
+            System.out.println("1"+a.getText().toUpperCase());
+            System.out.println("************");
+            System.out.println(dataTable.asList());
+            Assert.assertTrue(dataTable.asList().contains(a.getText().toUpperCase()));
         }
-        System.out.println(kitapEvi);
-        Assert.assertTrue(kitapEvi.contains(data.toLowerCase()));
     }
 
     @And("users get all yayinevleri")
     public void usersGetAllYayinevleri() {
         List<String> kitapEvi = new ArrayList<>();
         for (WebElement a: us004Page.kitabeviList) {
-            kitapEvi.add(a.getText());
+            kitapEvi.add(a.getText().toLowerCase());
         }
         System.out.println(kitapEvi);
-        //
+        String maxOccurredElement = kitapEvi.stream()
+                .reduce(BinaryOperator.maxBy(Comparator.comparingInt(o -> Collections.frequency(kitapEvi, o)))).orElse(null);
+        System.out.println(maxOccurredElement);
     }
+
+
+
 }

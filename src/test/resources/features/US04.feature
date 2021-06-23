@@ -9,14 +9,12 @@ Feature: US04
     And user asserts kitap sayilari
 
   @TC0402
-  Scenario Outline: TC0402 en cok satilan kitaplarinm yayinevi
+  Scenario: TC0402 en cok satilan kitaplarinm yayinevi
     Given user enters homepage
     Then user hovers cok satan kitaplar
     Then user hovers cok satan edebiyat kitaplari
     Then user changes page view
-    Then user asserts the kitabevi data "<search>"
-    Examples:
-      | search  |
+    Then user asserts the kitabevi data
       | YAPI KREDi YAYINLARI  |
       | INKILAP KiTABEVi      |
       | KETEBE YAYINEVi       |
