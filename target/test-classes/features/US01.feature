@@ -1,7 +1,6 @@
 @SmokeTest @US01
 Feature:US_01 success register
 
-
   Background: user enters homepage and creates an account
     Given user enters homepage
     Then user clicks uye ol link

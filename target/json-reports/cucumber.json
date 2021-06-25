@@ -1,17 +1,17 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
         "line": 5,
-        "name": "user enters homepage and creates an account",
+        "name": "user enters homepage",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 4329784700,
+              "duration": 3495597200,
               "status": "passed"
             },
             "line": 6,
@@ -20,191 +20,68 @@
               "location": "stepdefinitions.US01_Stepdefinition.user_enters_homepage()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2264140600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks uye ol link",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_clicks_uye_ol_link()"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-06-16T17:21:57.301Z",
-        "line": 10,
-        "name": "TC0101 uye ol",
+        "start_timestamp": "2021-06-25T14:11:06.656Z",
+        "line": 38,
+        "name": "TC0303 Checking out Balzac\u0027s books",
         "description": "",
-        "id": "us-01-success-register;tc0101-uye-ol",
+        "id": "user-performs-searchbox-test;tc0303-checking-out-balzac-s-books",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 62754800,
+              "duration": 1933854700,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user verifies hesap olustur page",
+            "line": 39,
+            "name": "user searches balzacs books",
             "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_verifies_hesap_olustur_page()"
-            },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SmokeTest"
-          },
-          {
-            "name": "@US01"
-          },
-          {
-            "name": "@TC0101"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "user enters homepage and creates an account",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1198726100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters homepage",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_homepage()"
+              "location": "stepdefinitions.US03_Stepdefinition.user_searches_balzacs_books()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1290968300,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat stepdefinitions.US03_Stepdefinition.user_verifies_result(US03_Stepdefinition.java:70)\r\n\tat ✽.user verifies result(file:///C:/Users/resit/IdeaProjects/UICucumber/src/test/resources/features/US03.feature:40)\r\n",
+              "duration": 10037960600,
+              "status": "failed"
             },
-            "line": 7,
-            "name": "user clicks uye ol link",
+            "line": 40,
+            "name": "user verifies result",
             "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_clicks_uye_ol_link()"
+              "location": "stepdefinitions.US03_Stepdefinition.user_verifies_result(io.cucumber.datatable.DataTable)"
             },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-16T17:22:04.037Z",
-        "line": 14,
-        "name": "TC0102 create an account",
-        "description": "",
-        "id": "us-01-success-register;tc0102-create-an-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 61712000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enters valid name",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_valid_name()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 53775000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user enters valid lastname",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_valid_lastname()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 57805700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enters valid email",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_valid_email()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 51063700,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user enters valid password \"Kitapyurdu\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Kitapyurdu\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 49512800,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user re-enters valid password \"Kitapyurdu\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Kitapyurdu\"",
-                  "offset": 30
-                }
-              ],
-              "location": "stepdefinitions.US01_Stepdefinition.user_re_enters_valid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 58175700,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user clicks  Kisisel Verilerin Korunması checkbox",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_clicks_kisisel_verilerin_korunması_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 555148500,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user clicks devam button",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_clicks_devam_button()"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "Vadideki zambak"
+                ]
+              },
+              {
+                "cells": [
+                  "Goriot Baba"
+                ]
+              },
+              {
+                "cells": [
+                  "Gambara"
+                ]
+              },
+              {
+                "cells": [
+                  "La Rabouilleuse"
+                ]
+              },
+              {
+                "cells": [
+                  "Otuz Yasindaki Kadin"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
@@ -213,212 +90,19 @@
             "name": "@SmokeTest"
           },
           {
-            "name": "@US01"
+            "name": "@US03"
           },
           {
-            "name": "@TC0102"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "user enters homepage and creates an account",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1261213300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters homepage",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1267967200,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks uye ol link",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_clicks_uye_ol_link()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-16T17:22:07.430Z",
-        "line": 24,
-        "name": "TC0103 check account",
-        "description": "",
-        "id": "us-01-success-register;tc0103-check-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 52451100,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "user enters name \"Lutfi\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Lutfi\"",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_name(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 47676800,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "user enters lastname \"Mutlu\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mutlu\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_lastname(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 49582400,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "user enters invalid email \"kuzu\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"kuzu\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_invalid_email(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 48024600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "user enters invalid password \"kitap\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"kitap\"",
-                  "offset": 29
-                }
-              ],
-              "location": "stepdefinitions.US01_Stepdefinition.user_enters_invalid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22516500,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "user re-enters invalid password \"kitap\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"kitap\"",
-                  "offset": 32
-                }
-              ],
-              "location": "stepdefinitions.US01_Stepdefinition.user_re_enters_invalid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 60369800,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "user clicks  Kisisel Verilerin Korunması checkbox",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_clicks_kisisel_verilerin_korunması_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 549240100,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "user clicks devam button",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.user_clicks_devam_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 40366300,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "Please enter a valid E-Mail address! message should appear",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.please_enter_a_valid_e_mail_address_message_should_appear()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 18961500,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "Your password must be between eight and twenty characters! message should appear",
-            "match": {
-              "location": "stepdefinitions.US01_Stepdefinition.your_password_must_be_between_and_characters_message_should_appear()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SmokeTest"
-          },
-          {
-            "name": "@US01"
-          },
-          {
-            "name": "@TC0103"
+            "name": "@TC0303"
           }
         ]
       }
     ],
-    "name": "US_01 success register",
+    "name": "user performs searchbox test",
     "description": "",
-    "id": "us-01-success-register",
+    "id": "user-performs-searchbox-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US01.feature",
+    "uri": "file:src/test/resources/features/US03.feature",
     "tags": [
       {
         "name": "@SmokeTest",
@@ -429,7 +113,7 @@
         }
       },
       {
-        "name": "@US01",
+        "name": "@US03",
         "type": "Tag",
         "location": {
           "line": 1,
