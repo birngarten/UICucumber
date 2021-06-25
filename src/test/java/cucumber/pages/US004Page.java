@@ -13,7 +13,7 @@ public class US004Page {
     }
     @FindBy(xpath = "//span[@class='mn-strong common-sprite']")
     public List<WebElement> headerLinks;
-    @FindBy(xpath = "//a[@class='mainNavIcon icon-angleRight']")
+    @FindBy(xpath = "//a[@class='mn-icon icon-angleRight']")
     public List<WebElement> enCokSatanEdebiyatKitaplari;
     @FindBy(xpath = "//div[@class='product-cr']")
     public List<WebElement> allBooks;

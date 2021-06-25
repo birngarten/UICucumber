@@ -3,20 +3,20 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-06-13T15:11:05.979Z",
-        "line": 16,
-        "name": "TC0302 search result check dostoyevski \u0026 747",
+        "start_timestamp": "2021-06-25T13:57:38.800Z",
+        "line": 12,
+        "name": "TC0402 en cok satilan kitaplarinm yayinevi",
         "description": "",
-        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;2",
+        "id": "us04;tc0402-en-cok-satilan-kitaplarinm-yayinevi",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 6583000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 13,
             "name": "user enters homepage",
             "match": {
               "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
@@ -25,11 +25,27 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2535000000,
+              "status": "passed"
             },
-            "line": 12,
-            "name": "user searches the data dostoyevski cucumbers",
-            "match": {},
+            "line": 14,
+            "name": "user hovers cok satan kitaplar",
+            "match": {
+              "location": "cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_kitaplar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 1, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\r\n\tat java.util.ArrayList.get(ArrayList.java:435)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\r\n\tat com.sun.proxy.$Proxy16.get(Unknown Source)\r\n\tat cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_edebiyat_kitaplari(US004Test.java:31)\r\n\tat ✽.user hovers cok satan edebiyat kitaplari(file:///C:/Users/samet/IdeaProjects/UICucumber/src/test/resources/features/US04.feature:15)\r\n",
+              "duration": 10078000000,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "user hovers cok satan edebiyat kitaplari",
+            "match": {
+              "location": "cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_edebiyat_kitaplari()"
+            },
             "keyword": "Then "
           },
           {
@@ -37,216 +53,64 @@
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 13,
-            "name": "user verifies the data 747 cucumbers",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@US03"
-          },
-          {
-            "name": "@TC0302"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-13T15:11:06.207Z",
-        "line": 17,
-        "name": "TC0302 search result check tolstoy \u0026 890",
-        "description": "",
-        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters homepage",
+            "line": 16,
+            "name": "user changes page view",
             "match": {
-              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
+              "location": "cucumber.stepdefinitions.US004Test.user_changes_page_view()"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "user searches the data tolstoy cucumbers",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "user verifies the data 890 cucumbers",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@US03"
-          },
-          {
-            "name": "@TC0302"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-13T15:11:06.234Z",
-        "line": 18,
-        "name": "TC0302 search result check turgenyev \u0026 168",
-        "description": "",
-        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters homepage",
-            "match": {
-              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "user searches the data turgenyev cucumbers",
-            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 13,
-            "name": "user verifies the data 168 cucumbers",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@US03"
-          },
-          {
-            "name": "@TC0302"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-13T15:11:06.263Z",
-        "line": 19,
-        "name": "TC0302 search result check victor hugo \u0026 259",
-        "description": "",
-        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters homepage",
+            "line": 17,
+            "name": "user asserts the kitabevi data",
             "match": {
-              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
+              "location": "cucumber.stepdefinitions.US004Test.user_asserts_the_kitabevi_data(io.cucumber.datatable.DataTable)"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "user searches the data victor hugo cucumbers",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "user verifies the data 259 cucumbers",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@US03"
-          },
-          {
-            "name": "@TC0302"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-13T15:11:06.295Z",
-        "line": 20,
-        "name": "TC0302 search result check balzac \u0026 363",
-        "description": "",
-        "id": "api-test;tc0302-search-result-check-\u003csearch\u003e-\u0026-\u003cresult\u003e;;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters homepage",
-            "match": {
-              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "user searches the data balzac cucumbers",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "user verifies the data 363 cucumbers",
-            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "YAPI KREDi YAYINLARI"
+                ]
+              },
+              {
+                "cells": [
+                  "INKILAP KiTABEVi"
+                ]
+              },
+              {
+                "cells": [
+                  "KETEBE YAYINEVi"
+                ]
+              },
+              {
+                "cells": [
+                  "KIRMIZI KEDi YAYINEVi"
+                ]
+              },
+              {
+                "cells": [
+                  "PEGASUS YAYINLARI"
+                ]
+              },
+              {
+                "cells": [
+                  "CAN YAYINLARI"
+                ]
+              },
+              {
+                "cells": [
+                  "SEL YAYINCILIK"
+                ]
+              },
+              {
+                "cells": [
+                  "iNDiGO KiTAP"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
@@ -255,19 +119,19 @@
             "name": "@smoketest"
           },
           {
-            "name": "@US03"
+            "name": "@US04"
           },
           {
-            "name": "@TC0302"
+            "name": "@TC0402"
           }
         ]
       }
     ],
-    "name": "API Test",
+    "name": "US04",
     "description": "",
-    "id": "api-test",
+    "id": "us04",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US03.feature",
+    "uri": "file:src/test/resources/features/US04.feature",
     "tags": [
       {
         "name": "@smoketest",
@@ -278,7 +142,7 @@
         }
       },
       {
-        "name": "@US03",
+        "name": "@US04",
         "type": "Tag",
         "location": {
           "line": 2,
