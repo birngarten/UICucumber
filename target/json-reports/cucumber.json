@@ -3,20 +3,18 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-06-25T13:57:38.800Z",
-        "line": 12,
-        "name": "TC0402 en cok satilan kitaplarinm yayinevi",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "us04;tc0402-en-cok-satilan-kitaplarinm-yayinevi",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 6583000000,
+              "duration": 4000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 5,
             "name": "user enters homepage",
             "match": {
               "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
@@ -25,92 +23,54 @@
           },
           {
             "result": {
-              "duration": 2535000000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 6,
             "name": "user hovers cok satan kitaplar",
             "match": {
               "location": "cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_kitaplar()"
             },
             "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-28T20:12:39.020Z",
+        "line": 14,
+        "name": "TC0502 control of son on yilin en cok satan kitaplari",
+        "description": "",
+        "id": "us05;tc0502-control-of-son-on-yilin-en-cok-satan-kitaplari",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "user hovers son on yilin en cok satanlari",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "error_message": "java.lang.IndexOutOfBoundsException: Index: 1, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\r\n\tat java.util.ArrayList.get(ArrayList.java:435)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\r\n\tat com.sun.proxy.$Proxy16.get(Unknown Source)\r\n\tat cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_edebiyat_kitaplari(US004Test.java:31)\r\n\tat ✽.user hovers cok satan edebiyat kitaplari(file:///C:/Users/samet/IdeaProjects/UICucumber/src/test/resources/features/US04.feature:15)\r\n",
-              "duration": 10078000000,
-              "status": "failed"
+              "status": "skipped"
             },
-            "line": 15,
-            "name": "user hovers cok satan edebiyat kitaplari",
+            "line": 16,
+            "name": "user asserts kitap sayilari",
             "match": {
-              "location": "cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_edebiyat_kitaplari()"
+              "location": "cucumber.stepdefinitions.US004Test.userAssertsKitapSayilari()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 16,
-            "name": "user changes page view",
-            "match": {
-              "location": "cucumber.stepdefinitions.US004Test.user_changes_page_view()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
             "line": 17,
-            "name": "user asserts the kitabevi data",
-            "match": {
-              "location": "cucumber.stepdefinitions.US004Test.user_asserts_the_kitabevi_data(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "YAPI KREDi YAYINLARI"
-                ]
-              },
-              {
-                "cells": [
-                  "INKILAP KiTABEVi"
-                ]
-              },
-              {
-                "cells": [
-                  "KETEBE YAYINEVi"
-                ]
-              },
-              {
-                "cells": [
-                  "KIRMIZI KEDi YAYINEVi"
-                ]
-              },
-              {
-                "cells": [
-                  "PEGASUS YAYINLARI"
-                ]
-              },
-              {
-                "cells": [
-                  "CAN YAYINLARI"
-                ]
-              },
-              {
-                "cells": [
-                  "SEL YAYINCILIK"
-                ]
-              },
-              {
-                "cells": [
-                  "iNDiGO KiTAP"
-                ]
-              }
-            ],
+            "name": "user asserts books are in correct order",
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -119,19 +79,19 @@
             "name": "@smoketest"
           },
           {
-            "name": "@US04"
+            "name": "@US05"
           },
           {
-            "name": "@TC0402"
+            "name": "@TC0502"
           }
         ]
       }
     ],
-    "name": "US04",
+    "name": "US05",
     "description": "",
-    "id": "us04",
+    "id": "us05",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US04.feature",
+    "uri": "file:src/test/resources/features/US05.feature",
     "tags": [
       {
         "name": "@smoketest",
@@ -142,11 +102,11 @@
         }
       },
       {
-        "name": "@US04",
+        "name": "@US05",
         "type": "Tag",
         "location": {
           "line": 2,
-          "column": 1
+          "column": 3
         }
       }
     ]
