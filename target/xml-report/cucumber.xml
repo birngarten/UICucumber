@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.649">
-<testcase classname="US05" name="TC0502 control of son on yilin en cok satan kitaplari" time="0.15">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user enters homepage..................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="24.726">
+<testcase classname="US05" name="TC0501 control of books number" time="11.525">
+<system-out><![CDATA[Given user enters homepage..................................................passed
 Then user hovers cok satan kitaplar.........................................passed
-And user hovers son on yilin en cok satanlari...............................undefined
-And user asserts kitap sayilari.............................................skipped
-Then user asserts books are in correct order................................skipped
-]]></failure>
+Then user hovers cok satan edebiyat kitaplari...............................passed
+And user asserts kitap sayilari.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US05" name="TC0502 control of son on yilin en cok satan kitaplari" time="6.078">
+<system-out><![CDATA[Given user enters homepage..................................................passed
+Then user hovers cok satan kitaplar.........................................passed
+And user hovers son on yilin en cok satanlari...............................passed
+And user asserts kitap sayilari.............................................passed
+Then user asserts books are in correct order................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US05" name="TC0503 control of 2008  yilinin en cok satan kitaplari" time="6.554">
+<system-out><![CDATA[Given user enters homepage..................................................passed
+Then user hovers cok satan kitaplar.........................................passed
+And user hovers son on yilin en cok satanlari...............................passed
+Then user clicks ikibinsekiz year link......................................passed
+And user asserts first book name "Olasılıksız"..............................passed
+Then user assert fist book price "27,20"....................................passed
+]]></system-out>
 </testcase>
 </testsuite>

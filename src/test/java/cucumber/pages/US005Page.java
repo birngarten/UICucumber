@@ -19,7 +19,7 @@ public class US005Page {
     public WebElement ikibinSekizLink;
     @FindBy(xpath = "//div[@class='name ellipsis']")
     public List<WebElement> booksName;
-    @FindBy(xpath = "//span[@class='TL']")
+    @FindBy(xpath = "//span[@class='value']")
     public List<WebElement> bookPrices;
 
 }

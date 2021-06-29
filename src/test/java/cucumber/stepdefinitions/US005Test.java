@@ -25,12 +25,17 @@ public class US005Test {
 
     @Then("user asserts books are in correct order")
     public void user_asserts_books_are_in_correct_order() {
-        List<Integer>allNumbers= new ArrayList<>();
-        for (WebElement w: us005Page.bookOrderNumbers) {
-            allNumbers.add(Integer.parseInt(w.getText()));
-        }
-        Assert.assertEquals(allNumbers.stream().sorted(Comparator.naturalOrder()).collect(Collectors.toList()), allNumbers);
-    }
+        Assert.assertEquals(
+                us005Page.bookOrderNumbers.stream()
+                        .map(WebElement::getText)
+                        .map(Integer::parseInt)
+                        .sorted(Comparator.naturalOrder())
+                        .collect(Collectors.toList()),
+                us005Page.bookOrderNumbers.stream()
+                        .map(WebElement::getText)
+                        .map(Integer::parseInt)
+                        .collect(Collectors.toList()));
+            }
     @Then("user clicks ikibinsekiz year link")
     public void userClicksIkibinsekizYearLink() {
         us005Page.ikibinSekizLink.click();
@@ -42,7 +47,7 @@ public class US005Test {
 
     @Then("user assert fist book price {string}")
     public void userAssertFistBookPrice(String bookPrice) {
-        Assert.assertEquals(us005Page.bookPrices.get(0).getText(),bookPrice);
-
+        System.out.println(us005Page.bookPrices.get(1).getText());
+        Assert.assertEquals(us005Page.bookPrices.get(1).getText(),bookPrice);
     }
 }
