@@ -1,88 +1,72 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "user enters homepage",
+        "line": 4,
+        "name": "",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 3495597200,
+              "duration": 7408682800,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "user enters homepage",
             "match": {
               "location": "stepdefinitions.US01_Stepdefinition.user_enters_homepage()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1197724900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user hovers cok satan kitaplar",
+            "match": {
+              "location": "stepdefinitions.US04_Stepdefinition.user_hovers_cok_satan_kitaplar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1248056500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user hovers cok satan edebiyat kitaplari",
+            "match": {
+              "location": "stepdefinitions.US04_Stepdefinition.user_hovers_cok_satan_edebiyat_kitaplari()"
+            },
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-06-25T14:11:06.656Z",
-        "line": 38,
-        "name": "TC0303 Checking out Balzac\u0027s books",
+        "start_timestamp": "2021-06-30T20:38:31.401Z",
+        "line": 33,
+        "name": "bestselling publisher",
         "description": "",
-        "id": "user-performs-searchbox-test;tc0303-checking-out-balzac-s-books",
+        "id": "user-tests-the-best-selling-books;bestselling-publisher",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1933854700,
+              "duration": 290456600,
               "status": "passed"
             },
-            "line": 39,
-            "name": "user searches balzacs books",
+            "line": 34,
+            "name": "user asserts bestselling publisher",
             "match": {
-              "location": "stepdefinitions.US03_Stepdefinition.user_searches_balzacs_books()"
+              "location": "stepdefinitions.US04_Stepdefinition.user_asserts_bestselling_publisher()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat stepdefinitions.US03_Stepdefinition.user_verifies_result(US03_Stepdefinition.java:70)\r\n\tat ✽.user verifies result(file:///C:/Users/resit/IdeaProjects/UICucumber/src/test/resources/features/US03.feature:40)\r\n",
-              "duration": 10037960600,
-              "status": "failed"
-            },
-            "line": 40,
-            "name": "user verifies result",
-            "match": {
-              "location": "stepdefinitions.US03_Stepdefinition.user_verifies_result(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Vadideki zambak"
-                ]
-              },
-              {
-                "cells": [
-                  "Goriot Baba"
-                ]
-              },
-              {
-                "cells": [
-                  "Gambara"
-                ]
-              },
-              {
-                "cells": [
-                  "La Rabouilleuse"
-                ]
-              },
-              {
-                "cells": [
-                  "Otuz Yasindaki Kadin"
-                ]
-              }
-            ],
-            "keyword": "Then "
           }
         ],
         "tags": [
@@ -90,19 +74,19 @@
             "name": "@SmokeTest"
           },
           {
-            "name": "@US03"
+            "name": "@US04"
           },
           {
-            "name": "@TC0303"
+            "name": "@TC0403"
           }
         ]
       }
     ],
-    "name": "user performs searchbox test",
+    "name": "user tests the best-selling books",
     "description": "",
-    "id": "user-performs-searchbox-test",
+    "id": "user-tests-the-best-selling-books",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US03.feature",
+    "uri": "file:src/test/resources/features/US04.feature",
     "tags": [
       {
         "name": "@SmokeTest",
@@ -113,7 +97,7 @@
         }
       },
       {
-        "name": "@US03",
+        "name": "@US04",
         "type": "Tag",
         "location": {
           "line": 1,

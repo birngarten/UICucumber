@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.732">
-    <testcase classname="user performs searchbox test" name="TC0303 Checking out Balzac's books" time="15.519">
-        <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user enters homepage..................................................passed
-Given user searches balzacs books...........................................passed
-Then user verifies result...................................................failed
-
-StackTrace:
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at stepdefinitions.US03_Stepdefinition.user_verifies_result(US03_Stepdefinition.java:70)
-	at ✽.user verifies result(file:///C:/Users/resit/IdeaProjects/UICucumber/src/test/resources/features/US03.feature:40)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.383">
+    <testcase classname="user tests the best-selling books" name="bestselling publisher" time="10.204">
+        <system-out><![CDATA[Given user enters homepage..................................................passed
+And user hovers cok satan kitaplar..........................................passed
+Then user hovers cok satan edebiyat kitaplari...............................passed
+Given user asserts bestselling publisher....................................passed
+]]></system-out>
     </testcase>
 </testsuite>
