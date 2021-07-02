@@ -7,14 +7,11 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
-import java.util.List;
 import java.util.stream.Collectors;
 
 public class US005Test {
+
     US005Page us005Page = new US005Page();
     Actions actions = new Actions(Driver.getDriver());
 
@@ -22,7 +19,6 @@ public class US005Test {
     public void user_hovers_son_on_yilin_en_cok_satanlari() {
         actions.moveToElement(us005Page.enCokSatanEdebiyatKitaplari.get(8)).click().perform();
     }
-
     @Then("user asserts books are in correct order")
     public void user_asserts_books_are_in_correct_order() {
         Assert.assertEquals(
@@ -44,7 +40,6 @@ public class US005Test {
     public void userAssertsFirstBookName(String bookName) {
         Assert.assertEquals(us005Page.booksName.get(0).getText(),bookName);
     }
-
     @Then("user assert fist book price {string}")
     public void userAssertFistBookPrice(String bookPrice) {
         System.out.println(us005Page.bookPrices.get(1).getText());
