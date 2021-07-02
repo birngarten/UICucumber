@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6476000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 5,
@@ -20,258 +20,47 @@
               "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2390000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user hovers cok satan kitaplar",
-            "match": {
-              "location": "cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_kitaplar()"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-06-29T13:08:09.216Z",
-        "line": 9,
-        "name": "TC0501 control of books number",
+        "start_timestamp": "2021-07-02T13:45:53.859Z",
+        "line": 22,
+        "name": "TC0603 checks without log-in a book can be added to basket",
         "description": "",
-        "id": "us05;tc0501-control-of-books-number",
+        "id": "us06;tc0603-checks-without-log-in-a-book-can-be-added-to-basket",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2406000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user hovers cok satan edebiyat kitaplari",
-            "match": {
-              "location": "cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_edebiyat_kitaplari()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 66000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user asserts kitap sayilari",
-            "match": {
-              "location": "cucumber.stepdefinitions.US004Test.userAssertsKitapSayilari()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@US05"
-          },
-          {
-            "name": "@TC0501"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1234000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user enters homepage",
-            "match": {
-              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2260000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user hovers cok satan kitaplar",
-            "match": {
-              "location": "cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_kitaplar()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-29T13:08:20.778Z",
-        "line": 14,
-        "name": "TC0502 control of son on yilin en cok satan kitaplari",
-        "description": "",
-        "id": "us05;tc0502-control-of-son-on-yilin-en-cok-satan-kitaplari",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1890000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user hovers son on yilin en cok satanlari",
-            "match": {
-              "location": "cucumber.stepdefinitions.US005Test.user_hovers_son_on_yilin_en_cok_satanlari()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 37000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user asserts kitap sayilari",
-            "match": {
-              "location": "cucumber.stepdefinitions.US004Test.userAssertsKitapSayilari()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 643000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user asserts books are in correct order",
-            "match": {
-              "location": "cucumber.stepdefinitions.US005Test.user_asserts_books_are_in_correct_order()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@US05"
-          },
-          {
-            "name": "@TC0502"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1010000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user enters homepage",
-            "match": {
-              "location": "cucumber.stepdefinitions.US001Test.userEntersHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2321000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user hovers cok satan kitaplar",
-            "match": {
-              "location": "cucumber.stepdefinitions.US004Test.user_hovers_cok_satan_kitaplar()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-29T13:08:26.884Z",
-        "line": 20,
-        "name": "TC0503 control of 2008  yilinin en cok satan kitaplari",
-        "description": "",
-        "id": "us05;tc0503-control-of-2008--yilinin-en-cok-satan-kitaplari",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1622000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user hovers son on yilin en cok satanlari",
-            "match": {
-              "location": "cucumber.stepdefinitions.US005Test.user_hovers_son_on_yilin_en_cok_satanlari()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1499000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user clicks ikibinsekiz year link",
-            "match": {
-              "location": "cucumber.stepdefinitions.US005Test.userClicksIkibinsekizYearLink()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 96000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 23,
-            "name": "user asserts first book name \"Olasılıksız\"",
+            "name": "user clicks best seller book",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Olasılıksız\"",
-                  "offset": 29
-                }
-              ],
-              "location": "cucumber.stepdefinitions.US005Test.userAssertsFirstBookName(java.lang.String)"
+              "location": "cucumber.stepdefinitions.US006Test.user_clicks_best_seller_book()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 24,
-            "name": "user assert fist book price \"27,20\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"27,20\"",
-                  "offset": 28
-                }
-              ],
-              "location": "cucumber.stepdefinitions.US005Test.userAssertFistBookPrice(java.lang.String)"
-            },
+            "name": "user add the book to the basket",
+            "match": {},
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user asserts book in the basket",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -279,19 +68,19 @@
             "name": "@smoketest"
           },
           {
-            "name": "@US05"
+            "name": "@US06"
           },
           {
-            "name": "@TC0503"
+            "name": "@TC0603"
           }
         ]
       }
     ],
-    "name": "US05",
+    "name": "US06",
     "description": "",
-    "id": "us05",
+    "id": "us06",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US05.feature",
+    "uri": "file:src/test/resources/features/US06.feature",
     "tags": [
       {
         "name": "@smoketest",
@@ -302,11 +91,11 @@
         }
       },
       {
-        "name": "@US05",
+        "name": "@US06",
         "type": "Tag",
         "location": {
           "line": 2,
-          "column": 3
+          "column": 1
         }
       }
     ]
