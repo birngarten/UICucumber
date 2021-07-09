@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.854">
-<testcase classname="US06" name="TC0603 checks without log-in a book can be added to basket" time="0.18">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.915">
+<testcase classname="US08" name="TC0801 checking of best seller book" time="0.206">
 <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user enters homepage..................................................passed
-Then user clicks best seller book...........................................passed
-Then user add the book to the basket........................................undefined
-And user asserts book in the basket.........................................skipped
+Then user clicks dergi link.................................................undefined
+And user hovers tum dergiler................................................skipped
+Then user clicks ot link....................................................skipped
+And user asserts the total numbers of "75"..................................skipped
 ]]></failure>
 </testcase>
 </testsuite>

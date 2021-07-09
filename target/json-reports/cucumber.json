@@ -24,41 +24,49 @@
         ]
       },
       {
-        "start_timestamp": "2021-07-02T13:45:53.859Z",
-        "line": 22,
-        "name": "TC0603 checks without log-in a book can be added to basket",
+        "start_timestamp": "2021-07-09T13:00:31.687Z",
+        "line": 8,
+        "name": "TC0801 checking of best seller book",
         "description": "",
-        "id": "us06;tc0603-checks-without-log-in-a-book-can-be-added-to-basket",
+        "id": "us08;tc0801-checking-of-best-seller-book",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user clicks best seller book",
-            "match": {
-              "location": "cucumber.stepdefinitions.US006Test.user_clicks_best_seller_book()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
               "status": "undefined"
             },
-            "line": 24,
-            "name": "user add the book to the basket",
+            "line": 9,
+            "name": "user clicks dergi link",
             "match": {},
             "keyword": "Then "
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
-            "line": 25,
-            "name": "user asserts book in the basket",
+            "line": 10,
+            "name": "user hovers tum dergiler",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user clicks ot link",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user asserts the total numbers of \"75\"",
             "match": {},
             "keyword": "And "
           }
@@ -68,19 +76,19 @@
             "name": "@smoketest"
           },
           {
-            "name": "@US06"
+            "name": "@US08"
           },
           {
-            "name": "@TC0603"
+            "name": "@TC0801"
           }
         ]
       }
     ],
-    "name": "US06",
+    "name": "US08",
     "description": "",
-    "id": "us06",
+    "id": "us08",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US06.feature",
+    "uri": "file:src/test/resources/features/US08.feature",
     "tags": [
       {
         "name": "@smoketest",
@@ -91,7 +99,7 @@
         }
       },
       {
-        "name": "@US06",
+        "name": "@US08",
         "type": "Tag",
         "location": {
           "line": 2,
